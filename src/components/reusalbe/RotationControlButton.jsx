@@ -16,12 +16,12 @@ function RotationControlButton(props) {
     <motion.div
       whileHover={onHover}
       whileTap={onTap}
-      className="w-[100px]  cursor-pointer"
+      className="w-[100px] cursor-pointer rounded-full shadow-black shadow-xl"
     >
       <motion.img
         src={src}
         alt={smoothieName}
-        className="w-full h-full"
+        className="w-full h-full "
         onClick={() => {
           onIsRotating(degree);
           onIsActive(smoothieName);
